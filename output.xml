@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220609 13:19:37.619" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Session" source="D:\Advance_Robot_Python\Robot Framework_Workshop_2_open web Makro and Login\robot_session.robot">
+<test id="s1-t1" name="Case 1: Customers can login Makro Website" line="13">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://www.makroclick.com/th</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220609 13:19:37.806" level="INFO">Opening browser 'Chrome' to base url 'https://www.makroclick.com/th'.</msg>
+<status status="PASS" starttime="20220609 13:19:37.806" endtime="20220609 13:19:42.912"/>
+</kw>
+<kw name="Close Popup">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${CLOSE POPUP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220609 13:19:42.913" level="INFO">Clicking element 'css=#eventPopupModal &gt; div &gt; div &gt; div &gt; div:nth-child(1)'.</msg>
+<status status="PASS" starttime="20220609 13:19:42.913" endtime="20220609 13:19:43.067"/>
+</kw>
+<status status="PASS" starttime="20220609 13:19:42.912" endtime="20220609 13:19:43.067"/>
+</kw>
+<kw name="Click Button Cookie">
+<kw name="Click Button" library="Selenium2Library">
+<arg>${BUTTON COOKIE}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220609 13:19:43.073" level="INFO">Clicking button '//*[@id="onetrust-accept-btn-handler"]'.</msg>
+<status status="PASS" starttime="20220609 13:19:43.071" endtime="20220609 13:19:43.728"/>
+</kw>
+<status status="PASS" starttime="20220609 13:19:43.070" endtime="20220609 13:19:43.728"/>
+</kw>
+<kw name="Login">
+<arg>xxxxxx</arg>
+<arg>123456789</arg>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${LOGIN BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220609 13:19:43.732" level="INFO">Clicking element 'css=#__next &gt; div &gt; div &gt; div:nth-child(1) &gt; div.d-lg-none &gt; div.background-white.d-flex.flex-row.align-items-center.menuMember-button &gt; div.click.ml-auto &gt; div:nth-child(1) &gt; div &gt; div &gt; div'.</msg>
+<status status="PASS" starttime="20220609 13:19:43.732" endtime="20220609 13:19:44.168"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${LOGIN BUTTON1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220609 13:19:44.169" level="INFO">Clicking element 'css=#__next &gt; div &gt; div &gt; div:nth-child(1) &gt; div.d-lg-none &gt; div.background-white.d-flex.flex-row.align-items-center.menuMember-button &gt; div.click.ml-auto &gt; div.MenuMemberPopOver__PopperView-sc-8xh8ff-0.ebQote.menumember-popper.p-0 &gt; div &gt; a.p-0.none-style.pl-0 &gt; div'.</msg>
+<status status="PASS" starttime="20220609 13:19:44.168" endtime="20220609 13:19:44.528"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${USERNAME TEXTBOX}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220609 13:19:44.530" level="INFO">Typing text 'xxxxxx' into text field 'css=#login_form-email_or_phone-input'.</msg>
+<status status="PASS" starttime="20220609 13:19:44.529" endtime="20220609 13:19:45.280"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220609 13:19:48.291" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220609 13:19:45.281" endtime="20220609 13:19:48.291"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${PASSWORD TEXTBOX}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220609 13:19:48.292" level="INFO">Typing text '123456789' into text field 'css=#password'.</msg>
+<status status="PASS" starttime="20220609 13:19:48.291" endtime="20220609 13:19:48.386"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220609 13:19:51.389" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220609 13:19:48.386" endtime="20220609 13:19:51.389"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${SIGNIN BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220609 13:19:51.390" level="INFO">Clicking element 'css=#login-form &gt; div.mt-2.click'.</msg>
+<status status="PASS" starttime="20220609 13:19:51.389" endtime="20220609 13:19:51.484"/>
+</kw>
+<status status="PASS" starttime="20220609 13:19:43.730" endtime="20220609 13:19:51.485"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220609 13:19:56.498" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220609 13:19:51.486" endtime="20220609 13:19:56.499"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220609 13:19:56.501" endtime="20220609 13:19:58.817"/>
+</kw>
+<status status="PASS" starttime="20220609 13:19:37.805" endtime="20220609 13:19:58.819"/>
+</test>
+<status status="PASS" starttime="20220609 13:19:37.619" endtime="20220609 13:19:58.821"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Session">Robot Session</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
