@@ -2,7 +2,7 @@
 
 Library    Selenium2Library
 
-Test Case
+Test Cases
 
 1.Open browser MakroClick.com
 
